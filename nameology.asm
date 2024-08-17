@@ -1,6 +1,6 @@
 .data
 #有使用chatgpt-4跟claude AI 生成程式跟加註解
-ID: .string "s1113356\n"
+#ID: .string "s1111111\n"
 strchoise: .string "(Two characters last name + Two characters first name):1 \n(One character last name + Two characters first name):2 \n((Two characters last name + One character first name):3 \n(One character last name + One character first name):4 \n"
 
 str1: .string "Please enter the strokes of the first character of the last name="
@@ -80,9 +80,9 @@ outrestrainttotal:.string "Outside restraint Total"
 .text
 main:
 	# Display ID
-	la a0, ID
-	
-	jal printString 
+	#la a0, ID
+	#jal printString
+
 	la a0 strchoise
 	jal printString 
 	jal input
